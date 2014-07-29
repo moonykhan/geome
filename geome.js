@@ -1,5 +1,5 @@
 var app = new wilson();
-app.initapp("GeoMe", "wilson.geome", ['WQL']);
+app.initapp("GeoMe", "wilson.geome", ['datastore']);
 	$.get("http://ipinfo.io", function(response) {
   		 app.datastore("CHECK", response.country, null, null, website, function(data){
   		 	console.log(data);

@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Muneeb App</title>
+        <title>GeoMe</title>
         <script src="apps/api/jquery.js"></script>
         <script src="apps/api/init.js"></script>
 
         <script>
             var app = new wilson();
-                app.initapp("GeoMe", "wilson.geome", ['WQL']);
+                app.initapp("GeoMe", "wilson.geome", ['WQL', 'datastore']);
                     app.datastore("CHECK", "geomescript", null, null, null, function(data){
                         if(data.exist == false){
                             app.datastore("MONITOR", "geomescript", "/geome/geome.js", "monitor", null, function(data){
