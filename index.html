@@ -11,7 +11,8 @@
         <script>
             var app = new wilson();
                 app.initapp("GeoMe", "wilson.geome", ['WQL', 'datastore']);
-                    app.datastore("CHECK", "geomescript", null, null, null, function(data){
+                
+                    app.datastore("CHECK", "geomescript", null, "monitor", null, function(data){
                         if(data.exist == false){
                             app.datastore("MONITOR", "geomescript", "/geome/geome.js", "monitor", null, function(data){
                                 if(data.success == false){
